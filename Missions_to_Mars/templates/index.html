@@ -7,7 +7,6 @@
     <title>Mission to Mars</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
     background-color: whitesmoke;
@@ -22,6 +21,7 @@
         <div class="jumbotron text-center" style="background-image: url(https://i.natgeofe.com/k/eeb640a6-c3bf-4d83-a806-f5829d474f5d/mars.jpg); background-size: 100%; height: 300px;">
         <h1 style="color: red">Mission To Mars</h1>
         <a class="btn btn-lg" style="background-color: gray; color: white" href="/scrape" role="button">Hit to Scrape Mars Data</a>
+        </div>
     </div>
 
 
@@ -35,7 +35,7 @@
             <h4 style="color: white"><p>{{mars.news_paragraph}}</p></h4>
             </div>
         </div>
-    </div>
+        </div>
     </div>
 
     <!-- Mars Featured Image -->
@@ -44,17 +44,15 @@
         <h2 style="color: white"><b>Featured Mars Image</b></h2>
             <img src="{{mars.featured_image_url}}" class="center">
         </div>
+    </div>
 
         <!-- Mars Facts -->
         <div class="col-md-12">
             <h2 style="color: white">Mars Facts</h2>
             <div class="col-md-12" style="color: white">
             <h2>{{mars.mars_facts | safe}}</h2>
-
             </div>
         </div>
-    </div>
-    </div>
 
         <!-- Mars Hemispheres -->
     <div class="row" style="margin-top: 80px;">
@@ -72,8 +70,6 @@
         </div>
         {% endfor %}
     </div>
-    </div>
-
 
 </body>
 </html>
